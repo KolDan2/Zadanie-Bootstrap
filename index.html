@@ -7,6 +7,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
+<!-- Strona zawiera: 
+komponenty: avbar, navbar-expand-lg, navbar-dark, navbar-brand, navbar-toggler, navbar-toggler-icon, collapse, navbar-collapse, nav-item, nav-link, container, container-fluid, table, table-striped, table-danger, carousel, carousel-inner, carousel-item, carousel-control-prev, carousel-control-next, carousel-control-prev-icon, carousel-control-next-icon, toast, toast-header, toast-body, btn, btn-danger, btn-close
+
+pomocnicze: bg-danger, bg-opacity-50, bg-light, bg-dark, text-center, w-50, mx-auto, p-5, mb-4, mt-3, py-5, rounded-3, lead, display-4, fs-1, align-middle, me-auto, position-fixed, bottom-0, end-0, d-block, ms-auto
+
+-->
 <body class="bg-danger bg-opacity-50" style="background-image: url('pizza.png'); background-size: cover;background-repeat: repeat; background-position: center; max-height: 70vh;">
   <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
     <div class="container-fluid">
@@ -17,8 +24,8 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link active" href="#">Strona Główna</a></li>
-          <li class="nav-item"><a class="nav-link" href="#tabela">Cennik</a></li>
-          <li class="nav-item"><a class="nav-link" href="#karuzela">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Cennik">Cennik</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Galeria">Galeria</a></li>
         </ul>
       </div>
     </div>
@@ -32,8 +39,16 @@
     </div>
   </div>
 
+ <div class="progress mb-4" style="height: 40px;">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" 
+         role="progressbar" 
+         style="width: 100%;">
+
+         <h1 class="text-dark" id="Cennik">Cennik</h1>
+    </div>
+  </div>
+
   <div class="container mb-5" id="tabela">
-    <h2 class="mb-3">Cennik</h2>
     <table class="table table-striped table-danger">
     <thead>
       <tr>
@@ -86,8 +101,16 @@
     </table>
   </div>
 
+  <div class="progress mb-4" style="height: 40px;">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" 
+         role="progressbar" 
+         style="width: 100%;">
+
+         <h1 class="text-dark" id="Galeria">Galeria Dobroci</h1>
+    </div>
+  </div>
+
   <div id="karuzela" class="container mb-5">
-    <h2 class="mb-3">Galeria Dobroci</h2>
     <div id="kar" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
